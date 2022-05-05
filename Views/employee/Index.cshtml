@@ -1,0 +1,25 @@
+﻿@model IEnumerable<project1._2.Models.employee>
+@{
+    ViewBag.Title = "Home";
+}
+
+<h2>Home</h2>
+<table class="table table-boardered">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>age</th>
+        <th>salary</th>
+        <th>gender</th>
+    </tr>
+    @foreach (var max in Model)
+    {
+        <tr>
+            <td>@max.id</td>
+            <td>@max.name</td>
+            <td>@max.age</td>
+            <td>@max.salary</td>
+            <td>@max.gender</td>
+        </tr>
+    }
+</table>
